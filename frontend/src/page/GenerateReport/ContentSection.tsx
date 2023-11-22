@@ -178,11 +178,12 @@ export const ContentSection = ({
                     {
                         render: (data, index) => {
                             return (
+
                                 <div
                                     className={styles['actionButton']}
                                     onClick={() =>
                                         push(
-                                            `/generate-report/${data.return_code}?selectedDate=${selectedDate}`
+                                            `/generate-report?reportId=${data.return_code}&selectedDate=${selectedDate}`
                                         )
                                     }
                                 >
