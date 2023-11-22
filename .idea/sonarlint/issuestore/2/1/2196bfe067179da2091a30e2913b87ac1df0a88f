@@ -1,0 +1,37 @@
+
+k	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´çÚþûÿÿÿÿ
+k	java:S117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÚøÄúÿÿÿÿ
+k	java:S117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹¤Íæüÿÿÿÿ
+l	java:S117®"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ²ÿåûÿÿÿÿ
+l	java:S117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—­ç¤úÿÿÿÿ
+X	java:S125"<This block of commented-out lines of code should be removed.(¼«»å8üà¸¦¿1
+o	java:S116)"URename this field "ReportRepo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Þ¢žúÿÿÿÿ
+6
+java:S1170&"!Make this final field static too.(èÆ¯u
+M
+java:S18547"8Remove this useless assignment to local variable "rand".(¦Óý<
+X	java:S1253"<This block of commented-out lines of code should be removed.(ÿ®ùé8³Üº¦¿1
+>
+java:S14817")Remove this unused "rand" local variable.(¦Óý<
+X	java:S125B"<This block of commented-out lines of code should be removed.(òÈ¾¿8¾¨¼¦¿1
+X	java:S125K"<This block of commented-out lines of code should be removed.(ÿ®ùé8©Ð»¦¿1
+]	java:S125R"<This block of commented-out lines of code should be removed.(Ú›¦²üÿÿÿÿ8œ¢º¦¿1
+Q	java:S125\"<This block of commented-out lines of code should be removed.(þÁˆž
+V	java:S125n"<This block of commented-out lines of code should be removed.(Èƒ§àÿÿÿÿÿ
+•
+java:S2159p"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(ãÑƒœúÿÿÿÿ
+N
+java:S1117w"8Rename "data" which hides the field declared at line 46.(ËÈßŽ
+X	java:S125s"<This block of commented-out lines of code should be removed.(ÿ®ùé8„‡¼¦¿1
+]	java:S125|"<This block of commented-out lines of code should be removed.(¥ÂÄ›øÿÿÿÿ8Ä¯»¦¿1
+A	java:S106“"+Replace this use of System.out by a logger.(§°Š†
+Q	java:S125˜"<This block of commented-out lines of code should be removed.(žéî`
+I
+java:S1135"2Complete the task associated to this TODO comment.(‡ñÅ¼
+Q	java:S125¥"<This block of commented-out lines of code should be removed.(êß
+R	java:S125²"<This block of commented-out lines of code should be removed.(Ôû›Ü
+]
+java:S1126Ê"AReplace this if-then-else statement by a single return statement.(øŽ…þûÿÿÿÿ
+F	java:S106Ú"+Replace this use of System.out by a logger.(Éïòºÿÿÿÿÿ
+L
+java:S1068&"7Remove this unused "fileStorageLocation" private field.(èÆ¯u

@@ -1,0 +1,32 @@
+
+m	java:S117o"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹åğŞ8ÀÜÁ¦¿1
+]	java:S125"<This block of commented-out lines of code should be removed.(Ã¬©üøÿÿÿÿ8ÆÜÁ¦¿1
+C
+java:S14527"&Remove usage of generic wildcard type.(º£Š8ÏÜÁ¦¿1
+H
+java:S1452A"&Remove usage of generic wildcard type.(ùê˜®ûÿÿÿÿ8ÓÜÁ¦¿1
+Y
+java:S1854U"<Remove this useless assignment to local variable "password".(®“Âš8ÔÜÁ¦¿1
+H
+java:S1452Q"&Remove usage of generic wildcard type.(à£˜€ûÿÿÿÿ8ÕÜÁ¦¿1
+X	java:S125G"<This block of commented-out lines of code should be removed.(¯ÀÛĞ8ÕÜÁ¦¿1
+]	java:S125T"<This block of commented-out lines of code should be removed.(€ªÈ‚üÿÿÿÿ8ÖÜÁ¦¿1
+J
+java:S1481U"-Remove this unused "password" local variable.(®“Âš8ÖÜÁ¦¿1
+X	java:S125V"<This block of commented-out lines of code should be removed.( Ã¦é8×ÜÁ¦¿1
+X	java:S125^"<This block of commented-out lines of code should be removed.(½Öºâ8×ÜÁ¦¿1
+]	java:S125a"<This block of commented-out lines of code should be removed.(€ÒÄåúÿÿÿÿ8×ÜÁ¦¿1
+]	java:S125i"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ØÜÁ¦¿1
+]	java:S125n"<This block of commented-out lines of code should be removed.(«ÿ‹ùÿÿÿÿ8ÙÜÁ¦¿1
+Z
+java:S1854Š"<Remove this useless assignment to local variable "userdata".(ÄÛß¶8 ¹Â¦¿1
+D
+java:S1452"&Remove usage of generic wildcard type.(öæ’¡8ÛÜÁ¦¿1
+e
+java:S4488€"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(ëôõw8ÛÜÁ¦¿1
+H	java:S106„"+Replace this use of System.out by a logger.(öÄ¯ò8ÜÜÁ¦¿1
+K
+java:S1481Š"-Remove this unused "userdata" local variable.(ÄÛß¶8¤¹Â¦¿1
+Y	java:S125"<This block of commented-out lines of code should be removed.( Ã¦é8¥¹Â¦¿1
+I
+java:S1452·"&Remove usage of generic wildcard type.(ê¶¸¢ûÿÿÿÿ8áÜÁ¦¿1

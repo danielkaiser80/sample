@@ -1,0 +1,132 @@
+######INSERT INTO TABLES
+
+insert into EFASS.MMFBR221 u(u.BANK_CODE, u.BANK_NAME, u.AMOUNT) values('2001','JULIE BANK', '10000')
+
+insert into EFASS.MMFBR221 u(u.BANK_CODE, u.BANK_NAME, u.AMOUNT) values('2002','JERRY BANK', '37000')
+
+insert into EFASS.MMFBR221 u(u.BANK_CODE, u.BANK_NAME, u.AMOUNT) values('2003','CHERRY BANK', '97000')
+
+insert into EFASS.MMFBR221 u(u.BANK_CODE, u.BANK_NAME, u.AMOUNT) values('2004','BENNY BANK', '77000')
+
+
+
+
+
+########UPDATE ID TO PRIMARY KEY
+--Add ID Column
+ALTER TABLE EFASS.mmfbr1000 
+ADD id NUMBER(10)    NOT NULL ;
+
+
+--Make ID Primary Key
+ALTER TABLE EFASS.mmfbr1000
+  ADD (
+    CONSTRAINT dept_pk2 PRIMARY KEY (id)
+  );
+
+--Create Sequence
+CREATE SEQUENCE mmfbr1000_sequence;
+
+
+--Create Trigger
+CREATE OR REPLACE TRIGGER id
+ BEFORE INSERT ON EFASS.mmfbr1000
+ FOR EACH ROW
+BEGIN
+ SELECT mmfbr1000_sequence.nextval
+ INTO :new.id
+ FROM dual;
+END;
+
+
+
+
+
+ALTER TABLE EFASS.mmfbrm001 
+ADD parent VARCHAR2(200 BYTE)  ;
+
+###################DROP CREATE TABLE WITH AUTOINCREMENT COLUMN ############
+
+
+
+
+
+--Table definition:
+
+DROP TABLE EFASS.mmfbr1000 CASCADE CONSTRAINTS;
+
+
+CREATE TABLE EFASS.EFASS_USERS (
+
+   USER_ID   NUMBER                              DEFAULT NOT NULL,
+  USERNAME  VARCHAR2(222 BYTE)                  NOT NULL,
+  PASSWORD  VARCHAR2(222 BYTE)                  DEFAULT NULL,
+  ROLE      VARCHAR2(222 BYTE)                  DEFAULT NULL,
+  ENABLED   NUMBER(3)                           DEFAULT NULL
+  
+  );
+
+ALTER TABLE EFASS.EFASS.EFASS_USERS ADD (
+  CONSTRAINT efass_pk PRIMARY KEY (ID));
+
+CREATE SEQUENCE dept_seq START WITH 1;
+
+--Trigger definition:
+
+CREATE OR REPLACE TRIGGER dept_bir 
+BEFORE INSERT ON EFASS.EFASS.EFASS_USERS 
+FOR EACH ROW
+
+BEGIN
+  SELECT dept_seq.NEXTVAL
+  INTO   :new.id
+  FROM   dual;
+END;
+/
+
+
+
+
+
+ALTER TABLE EFASS.MMFBR762 MODIFY (AMOUNT_GRANTED NOT NULL);
+alter table table_name set unused (column_name);
+
+  
+  
+  
+  ALTER TABLE EFASS.MMFBR761
+  ADD SN VARCHAR2(50 BYTE);
+  
+  
+  
+  ######################################################################
+  
+  
+  DROP TABLE EFASS.MMFBR746 CASCADE CONSTRAINTS;
+
+
+CREATE TABLE EFASS.MMFBR746 (
+ CODE         VARCHAR2(30 BYTE)                NOT NULL,
+  DESCRIPTION  VARCHAR2(200 BYTE)               NOT NULL,
+  AMOUNT_1     VARCHAR2(25 BYTE),
+  AMOUNT_2     VARCHAR2(25 BYTE),
+  AMOUNT_3     VARCHAR2(25 BYTE),
+  ID           NUMBER(10)                       NOT NULL
+  CREATE_DT           TIMESTAMP(6)              DEFAULT systimestamp
+  );
+
+ALTER TABLE EFASS.MMFBR746 ADD (
+  CONSTRAINT efass746_pk PRIMARY KEY (ID));
+
+CREATE SEQUENCE dept764_seq START WITH 1;
+--Trigger definition:
+
+CREATE OR REPLACE TRIGGER dept764_bir 
+BEFORE INSERT ON EFASS.MMFBR746 
+FOR EACH ROW
+
+BEGIN
+  SELECT dept_seq.NEXTVAL
+  INTO   :new.id
+  FROM   dual;
+END;

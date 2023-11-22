@@ -1,0 +1,183 @@
+@import '../../../styles/index.scss';
+
+.topItems {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .arrowContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 43px;
+        color: $fontColor;
+        font-family: $fontStyle;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        .back {
+            cursor: pointer;
+        }
+    }
+
+    .date {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .currentDate {
+            color: $fontColor;
+            font-family: $fontStyle;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            .currentDateValue {
+                color: $fontColor;
+                font-family: $fontStyle;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.reportHeader {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: $generalWhiteColor;
+    color: $fontColor;
+    // margin-bottom: 30px;
+    // position: fixed;
+
+    // border: 1px solid red;
+
+    .leftSection {
+        display: grid;
+        grid-template-columns: (2 1fr);
+        padding: 39px;
+        gap: 30px;
+
+        .bankNameCode {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+
+            .displayTitle {
+                color: $fontColor;
+                font-family: $fontStyle;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            .displayText {
+                color: $fontColor;
+                font-family: $fontStyle;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+
+    .rightSection {
+        display: grid;
+        grid-template-columns: (2 1fr);
+        padding: 39px;
+        gap: 30px;
+
+        .returnNameCode {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+
+            .displayTitle {
+                color: $fontColor;
+                font-family: $fontStyle;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            .displayText {
+                color: $fontColor;
+                font-family: $fontStyle;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.contentContainer {
+    background-color: $generalWhiteColor;
+    padding: 36px;
+    width: 100%; /* Set the width of the container */
+    overflow-x: scroll;
+    margin-top: 2rem;
+    // width: 100%;
+    // border: 1px solid red;
+
+    .contentTopSection {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        justify-content: space-between;
+
+        .selectContainer {
+            display: flex;
+            padding: 10px;
+            gap: 10px;
+            font-family: $fontStyle;
+            align-items: center;
+
+            label {
+                color: $fontColor;
+            }
+            select {
+                border: $ShadowColor 1px solid;
+                padding: 5px;
+                border-radius: 3px;
+                color: $fontColor;
+                outline: none;
+            }
+        }
+
+        .rightSide {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            align-items: center;
+            gap: 20px;
+
+            .reportButton {
+                display: flex;
+                border-radius: 5px;
+                padding: 8px;
+                align-items: center;
+                justify-content: center;
+                background: $backgroundColor;
+                color: $generalWhiteColor;
+                font-family: $fontStyle;
+                cursor: pointer;
+                font-size: 14px;
+                gap: 8px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 24px;
+            }
+        }
+    }
+}
